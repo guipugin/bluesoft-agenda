@@ -1,4 +1,4 @@
-package br.com.bluesoft.agenda;
+package br.com.bluesoft.agenda.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
