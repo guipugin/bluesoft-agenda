@@ -1,11 +1,14 @@
-﻿CREATE TABLE SALA
+﻿create table sala
 (
-SALA_ID INT PRIMARY KEY,
-SALA_NOME VARCHAR(40)
+   sala_id serial,
+   sala_nome varchar(255),
+   constraint sala_pkey primary key(sala_id)
 );
 
-CREATE TABLE AGENDAMENTOS
+create table agendamento
 (
-AG_NOMESALA VARCHAR(40),
-AG_DATA TIMESTAMP
+   ag_id serial,
+   ag_data date,
+   ag_salaId int references sala (sala_id),
+   constraint agendamento_pk primary key(ag_id)
 );
