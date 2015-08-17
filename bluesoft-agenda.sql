@@ -1,12 +1,14 @@
 ﻿create table sala
 (
-   sala_id int primary key,
-   sala_nome varchar(50)
+   sala_id serial,
+   sala_nome varchar(255),
+   constraint sala_pkey primary key(sala_id)
 );
 
 create table agendamento
 (
-   ad_id int primary key,
-   ag_data timestamp,
-   ag_salaId int references sala (sala_id)
+   ag_id serial,
+   ag_data date,
+   ag_salaId int references sala (sala_id),
+   constraint agendamento_pk primary key(ag_id)
 );
