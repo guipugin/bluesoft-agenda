@@ -1,4 +1,4 @@
-package br.com.bluesoft.agenda.modelo;
+package br.com.bluesoft.agenda.model;
 
 import javax.persistence.Entity;
 

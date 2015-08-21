@@ -1,5 +1,5 @@
 package br.com.bluesoft.agenda.dao;
 
-public class AgendaDAO {
+public abstract class AgendaDAO {
 
 }
